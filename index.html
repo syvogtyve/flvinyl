@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Meta tags Obrigatórias -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Bootstrap 16/08/25</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css" rel="stylesheet">
+
+  </head>
+      <style>
+        :root {
+          --primary-color: #424ac1;
+          --secondary-color: #2a2de4;
+          --dark-bg: #1a1a2e;
+        }
+        body {
+          background: linear-gradient(135deg, var(--dark-bg), #16213e);
+          color: white;
+          min-height: 100vh;
+        }
+        .navbar-custom {
+          background: rgba(6, 0, 31, 0.8) !important;
+          backdrop-filter: blur(10px);
+        }
+        .jumbotron-custom {
+          background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+          border-radius: 15px;
+          margin: 2rem 0;
+        }
+        .card-custom {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .card-custom:hover {
+          box-shadow: 0 10px 30px rgba(66, 106, 193, 0.3);
+        }
+        .album-img {
+          max-height: 200px;
+          object-fit: cover;
+          border-radius: 10px;
+        }
+        .table-custom, .form-custom, .collapse-custom {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border-radius: 15px;
+        }
+        .btn-custom {
+          background: rgb(74, 147, 255);
+          border: none;
+
+        }
+        .btn-custom:hover {
+          box-shadow: 0 5px 15px rgba(66, 106, 193, 0.3);
+        }
+      </style>
+    </head>
+
+      <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom sticky-top">
+      <div class="container">
+                  <a class="navbar-brand fw-bold fs-3" href="#" style="color: var(--secondary-color);">FLvinyl
+            </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="#login">Login</a></li>
+            <li class="nav-item"><a class="nav-link" href="#cadastro">Cadastro</a></li>
+            <li class="nav-item"><a class="nav-link" href="#catalog">Compras</a></li>
+            <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="container my-5">
+      <!-- Jumbotron -->
+      <div class="jumbotron-custom p-5 text-center text-white">
+        <h1><b>Descubra Sua Próxima Música Favorita</h1>
+        <p class="lead">Coleção mais topis de álbuns e vinil com qualidade PREMIUM</p>
+        <a class="btn btn-light btn-lg" href="#catalog"> Ver Catálogo</a>
+      </div>
+    
+      <!-- Catálogo de Álbuns -->
+      <section id="catalog" class="mb-5">
+        <h2 class="text-center mb-4">Catálogo de Álbuns</h2>
+        <div class="row g-4">
+          <!-- Exemplo de card -->
+          <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://saintmarierecords.com/cdn/shop/products/frank-ocean-channel-orange-214786256987-vinyl-593279.jpg?v=1682969790&width=640" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Channel Orange</h5>
+                <p class="card-text">Frank Ocean • 2012</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+         
+          <!-- Exemplo de card -->
+          <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://universalmusic.vtexassets.com/arquivos/ids/189074-800-800?v=638679043340600000&width=800&height=800&aspect=true" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Pink Pony Club</h5>
+                <p class="card-text">Chappell Roan • 2020</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+          
+                   <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://universalmusic.vtexassets.com/arquivos/ids/190475/vinil-playboi-carti-die-lit-2lp-black-first-pressing-importado-vinil-playboi-carti-die-lit-2lp-black-00602448608796-00060244860879.jpg?v=638793098995000000" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Die Lit </h5>
+                <p class="card-text">Playboi Carti • 2018</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+
+              <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://m.media-amazon.com/images/I/51O3hJjxEcL.jpg" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Eternal Sunshine</h5>
+                <p class="card-text">Ariana Grande • 2024</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://acdn-us.mitiendanube.com/stores/004/971/497/products/blackpink-album-jennie-ruby-vinyl-lp-1160482691_700x-0c81dee2131013d88f17462947043936-640-0.webp" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Ruby</h5>
+                <p class="card-text">JENNIE • 2025</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://www.vinylmeplease.com/cdn/shop/products/finally_rich_mock.jpg?v=1639635598" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Finally Rich</h5>
+                <p class="card-text">Chief Keef • 2012</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://m.media-amazon.com/images/I/81NE3xLll3L.jpg" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Layover</h5>
+                <p class="card-text">V • 2023</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+
+              <div class="col-lg-3 col-md-6" >
+            <div class="card card-custom text-white h-100">
+              <img src="https://cdn.shoplightspeed.com/shops/634895/files/70096167/1600x2048x2/j-hope-hope-on-the-street-vol-1-orange-vinyl.jpg" class="album-img card-img-top" alt="Channel Orange">
+              <div class="card-body">
+                <h5 class="card-title">Hope on Street</h5>
+                <p class="card-text">J-hope • 2024</p>
+                <a href="#" class="btn btn-primary btn-custom w-100"> Adquirir</a>
+              </div>
+            </div>
+          </div>
+         
+         
+        </div>
+      </section>
+    
+      <!-- Tabela -->
+      <section class="my-5">
+        <h2 class="text-center mb-4">Top Vendas</h2>
+        <div class="table-responsive">
+          <table class="table table-dark table-custom">
+            <thead>
+              <tr>
+                <th>#</th><th>Álbum</th><th>Artista</th><th>Ano</th><th>Preço</th><th>Vendas</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><th>1</th><td>V</td><td>Layover</td><td>2023</td><td class="text-success fw-bold">R$ 89,90</td><td><span class="badge bg-success">27.2k</span></td></tr>
+              <tr><th>2</th><td>J-hope</td><td>Hope on Street</td><td>2024</td><td class="text-success fw-bold">R$ 95,90</td><td><span class="badge bg-success">24.7k</span></td></tr>
+               <tr><th>3</th><td>Frank Ocean</td><td>Channel Orange</td><td>2012</td><td class="text-success fw-bold">R$ 109,90</td><td><span class="badge bg-success">22.1k</span></td></tr>
+                <tr><th>4</th><td>JENNIE</td><td>Ruby</td><td>2025</td><td class="text-success fw-bold">R$ 89,90</td><td><span class="badge bg-success">19.9k</span></td></tr>
+                 <tr><th>5</th><td>Ariana Grande</td><td>Eternal Sunshine</td><td>2024</td><td class="text-success fw-bold">R$ 79,90</td><td><span class="badge bg-success">18.5k</span></td></tr>
+                  <tr><th>6</th><td>Chappell Roan</td><td>Pink Pony Club</td><td>2020</td><td class="text-success fw-bold">R$ 89,90</td><td><span class="badge bg-success">15.2k</span></td></tr>
+                   <tr><th>7</th><td>Playboi Carti</td><td>Die Lit</td><td>2018</td><td class="text-success fw-bold">R$ 79,90</td><td><span class="badge bg-success">11.1k</span></td></tr>
+                    <tr><th>8</th><td>Chief Keef</td><td>Finally Rich</td><td>2012</td><td class="text-success fw-bold">R$ 65,90</td><td><span class="badge bg-success">7.2k</span></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    
+      <!-- Login e Cadastro -->
+      <div class="row my-5">
+
+                <div class="col-md-6" id="cadastro">
+          <div class="form-custom p-4">
+            <h3 class="mb-4 text-center">Cadastro</h3>
+            <form>
+              <div class="mb-3"><label>Nome Completo</label><input type="text" class="form-control" required></div>
+              <div class="mb-3"><label>Email</label><input type="email" class="form-control" required></div>
+              <div class="mb-3"><label>Senha</label><input type="password" class="form-control" required></div>
+              <div class="mb-3"><label>Confirmar Senha</label><input type="password" class="form-control" required></div>
+              <button type="submit" class="btn btn-success btn-custom w-100"> Cadastrar</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="col-md-6" id="login">
+          <div class="form-custom p-4">
+            <h3 class="mb-4 text-center">Login</h3>
+            <form>
+              <div class="mb-3"><label>Email</label><input type="email" class="form-control" required></div>
+              <div class="mb-3"><label>Senha</label><input type="password" class="form-control" required></div>
+              <div class="mb-3 form-check"><input type="checkbox" class="form-check-input"><label>Lembrar de mim</label></div>
+              <button type="submit" class="btn btn-primary btn-custom w-100"> Entrar</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    
+
+      <!-- collapse -->
+        <section class="my-5">
+            <h2 class="text-center mb-4">Perguntas Frequentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item bg-transparent border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                            Como Funciona a Entrega?
+                        </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body collapse-custom text-white">
+                            Informe seu endereço na finalização da compra e selecione o tipo de envio (PAC ou SEDEX) e seu pedido será enviado.
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="accordion-item bg-transparent border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                            Os Vinis são Originais?
+                        </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body collapse-custom text-white">
+                            Sim! Trabalhamos apenas com vinis originais e de alta qualidade. Todos passam por inspeção antes do envio.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item bg-transparent border-secondary">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed bg-dark text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                            Posso Trocar ou Devolver?
+                        </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body collapse-custom text-white">
+                            Claro! Você tem até 30 dias para trocar ou devolver qualquer produto, desde que esteja em perfeitas condições.
+                        </div>
+                    </div>
+                </div>
+            </div>
+              </section>
+    
+      
+      <!-- Sobre -->
+      <section id="sobre" class="my-5">
+        <div class="card card-custom text-white">
+          <div class="card-body p-5 text-center">
+            <h2 class="mb-4">Sobre a FLvinyl</h2>
+            <p class="lead">A FLvinly é uma loja especializada na venda de discos de vinil, com foco nos gêneros Pop e K-pop. Nosso objetivo é atender colecionadores, fãs e entusiastas da música que buscam produtos de qualidade, edições exclusivas e lançamentos atualizados do mercado fonográfico.
+
+Trabalhamos com um catálogo cuidadosamente selecionado, que inclui desde álbuns clássicos até os lançamentos mais recentes dos principais artistas internacionais e coreanos. Prezamos pela autenticidade dos produtos, garantia de procedência e um atendimento que valoriza a experiência do cliente.
+
+Atuamos com vendas online, com envios para todo o Brasil, e estamos constantemente ampliando nosso acervo para atender à demanda crescente por vinis de alta qualidade nos segmentos que representamos.
+
+Na FLvinyl, você encontra mais do que discos — encontra um serviço comprometido com excelência, curadoria e credibilidade no universo da música em vinil.</p>
+          </div>
+        </div>
+      </section>
+
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="https://i0.wp.com/taverna42.wordpress.com/wp-content/uploads/2019/02/killer_queen_skull.png?fit=1200%2C675&ssl=1" alt="Primeiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="img/imagem (1).jpg" alt="Segundo Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="https://static.jojowiki.com/images/thumb/c/c6/latest/20201229080513/Thehandoku.png/400px-Thehandoku.png" alt="Terceiro Slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="img/imagem.jpg" alt="Quarto Slide">
+    </div>
+
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Anterior</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Próximo</span>
+  </a>
+</div>
+
+
+
+
+    </div>
+    
+
+    <!-- JavaScript (Opcional) -->
+    <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
